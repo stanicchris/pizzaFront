@@ -1,15 +1,15 @@
 <div class="titre">
-  <h2>Details sur la Pizza : {{pizza.name | titlecase}}</h2>
+  <h1>Details sur la Pizza : {{pizza.name | titlecase}}</h1>
 </div>
 <div class="row detail">
-    <div class="col-4">
-      <div class="card descrip">
-        <img src="{{pizza.url}}" class="card-img-top">
-        <div class="card-body tester">
-          <h2>{{pizza.name | titlecase}}</h2>
+    <div class="col-5">
+      <div class="descrip shadow-lg test">
+        <img src="{{pizza.url}}" class="card-img-top test shadow-lg">
+        <div class="card-body test">
+          <h3>{{pizza.name | titlecase}}</h3>
           <p>Prix: {{pizza.price}} €</p>
-          <button class="buttonpayer">Payer</button>
-          <button class="buttonretour" (click)="retour()" >Retour</button>
+          <button class="buttonpayer shadow-lg">Payer</button>
+          <button class="buttonretour shadow-lg" (click)="retour()" >Retour</button>
         </div>
       </div>
     </div>

@@ -1,11 +1,11 @@
 img {
-    width: 100%
+	width: 100%
 }
 h2{
     font-size: 4rem
 }
 p{
-    font-size: 3rem
+	font-size: 3rem
 }
 .myButton {
 	background-color:#44c767;
@@ -28,4 +28,11 @@ p{
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+.test 
+{
+    background-color:#DCDCDC;;
+	border-radius:28px;
+
 }
