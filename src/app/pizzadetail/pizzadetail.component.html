@@ -1,3 +1,19 @@
-<p>
-  pizzadetail works!
-</p>
+<div class="titre">
+  <h2>Détails sur la Pizza : {{pizza.name | titlecase}}</h2>
+</div>
+<div class="row detail">
+    <div class="col-4">
+      <div class="card descrip">
+        <img src="{{pizza.url}}" class="card-img-top">
+        <div class="card-body">
+          <h2>{{pizza.name | titlecase}}</h2>
+          <p>Prix: {{pizza.price}} €</p>
+          <button class="buttonpayer">Payer</button>
+          <button class="buttonretour" (click)="retour()" >Retour</button>
+        </div>
+      </div>
+    </div>
+    <div class="col shadow-lg mx-5">
+      <h3>Description</h3>
+    </div>
+  </div>
