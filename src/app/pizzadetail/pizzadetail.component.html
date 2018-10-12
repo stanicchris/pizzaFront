@@ -1,20 +1,19 @@
 <div class="titre">
-  <h2>Détails sur la Pizza : {{pizza.name | titlecase}}</h2>
+  <h2>Details sur la Pizza : {{pizza.name | titlecase}}</h2>
 </div>
 <div class="row detail">
     <div class="col-4">
       <div class="card descrip">
         <img src="{{pizza.url}}" class="card-img-top">
-        <div class="card-body">
+        <div class="card-body tester">
           <h2>{{pizza.name | titlecase}}</h2>
           <p>Prix: {{pizza.price}} €</p>
-          <button class="buttonpayer">Payer</button> 
-          <br>
+          <button class="buttonpayer">Payer</button>
           <button class="buttonretour" (click)="retour()" >Retour</button>
         </div>
       </div>
     </div>
-    <div class="col shadow-lg mx-5">
+    <div class="col shadow-lg mx-4 test">
       <h3>Description</h3>
     </div>
   </div>
