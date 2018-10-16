@@ -41,7 +41,7 @@ export class PizzadetailComponent implements OnInit {
             sandbox: 'ARxg37MypVAI4_5PQicExeznS6hrTYwBGd55sxphXe_svV8kajSLGie-KQgTmlfZ6GHBxSpHMYNzaEzC'
           },
           button: {
-            label: 'paypal',
+            label: 'checkout',
           },
           onPaymentComplete: (data, actions) => {
             console.log('OnPaymentComplete');
