@@ -8,7 +8,7 @@
         <div class="card-body test">
           <h3>{{pizza.name | titlecase}}</h3>
           <p>Prix: {{pizza.price}} €</p>
-          <button class="buttonpayer shadow-lg">Payer</button>
+          <ngx-paypal [config]="payPalConfig"></ngx-paypal>
           <button class="buttonretour shadow-lg" (click)="retour()" >Retour</button>
         </div>
       </div>
