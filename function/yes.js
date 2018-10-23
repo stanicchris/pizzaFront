@@ -1,7 +1,3 @@
-/**
- * Created by chrissewell on 31/10/2016.
- */
-
 import request from 'request';
 
 export function handler(event, context, callback) {
@@ -9,7 +5,7 @@ export function handler(event, context, callback) {
 
     //Return 200 to caller
     callback(null, {
-        statusCode: '200',
+        statusCode: 200,
         body: "Hello, World ca marche"
     });
 
