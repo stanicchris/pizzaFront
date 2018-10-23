@@ -19,8 +19,8 @@ export function handler(event, context, callback) {
         url: 'https://ipnpb.sandbox.paypal.com/cgi-bin/webscr',
         method: 'POST',
         headers: {
-            'Connection': 'close'
-        },
+        "https://lpa2sgadot.herokuapp.com" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"client_name\": \"robert Dupond\", \"client_adress\": \"3 rue des alouettes Trifouilly les oies\", \"pizzas\": [ 0 ]}"
+        };
         body: body,
         strictSSL: true,
         rejectUnauthorized: false,
@@ -37,6 +37,7 @@ export function handler(event, context, callback) {
 
                 //The IPN is verified
                 console.log('Verified IPN!');
+                console.log(JSON.parse(body))
             } else if (body.substring(0, 7) === 'INVALID') {
 
                 //The IPN invalid
