@@ -19,6 +19,7 @@ export function handler(event, context, callback) {
         url: 'https://ipnpb.sandbox.paypal.com/cgi-bin/webscr',
         method: 'POST',
         headers: {
+            'Connection': 'close'
             },
            body: body,
         strictSSL: true,
