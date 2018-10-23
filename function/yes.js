@@ -9,8 +9,8 @@ export function handler(event, context, callback) {
 
     //Return 200 to caller
     callback(null, {
-        statusCode: '200'
-        
+        statusCode: '200',
+        body: "Hello, World ca marche"
     });
 
     //Read the IPN message sent from PayPal and prepend 'cmd=_notify-validate'
