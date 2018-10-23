@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "functions":"netlify-lambda serve"
+    "functions": "netlify-lambda serve ."
   },
   "private": true,
   "dependencies": {
