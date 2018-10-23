@@ -4,11 +4,12 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --prod && netlify-lambda build ./function/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "functions": "netlify-lambda serve ."
+    "functions": "netlify-lambda serve ./function/",
+    "functions1": "netlify-lambda build ./function/"
   },
   "private": true,
   "dependencies": {
