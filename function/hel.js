@@ -1,6 +1,6 @@
 const request = require('request');
 
-exports.handler = (event, context, callback) => {
+exports.handler = (event, _context, callback) => {
     console.log('Received event:', JSON.stringify(event, null, 2));
 
     //Return 200 to caller
